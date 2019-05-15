@@ -37,7 +37,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "git": "cd public/ && git checkout master && git add . && git commit -m 'Github build' && git push",
+    "git": "cd public/ && git add . && git commit -m 'Github build' && git push",
     "deploy": "yarn build && yarn git"
   },
   "repository": {
