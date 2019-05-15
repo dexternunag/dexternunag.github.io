@@ -21,8 +21,12 @@ const PlaygroundContainer = styled.section`
 `
 
 const PlaygroundDiv = styled.div`
-  height: 100vh;
-  min-height: 100vh;
+  height: 50vh;
+  // min-height: 100vh;
+
+  &.playground--list {
+    padding: 350px 300px;
+  }
 `
 
 const BackgroundColor = styled.div`
@@ -49,6 +53,34 @@ const PlaygroundHeader = styled.h1`
   padding-top: 18px;
 `
 
+const PlaygroundText = styled.p`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Montserrat',sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+
+  line-height: 31px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  color: #E3E3E3;
+`
+
+const PlaygroundTextRedShadow = styled.div`
+  z-index: -1;
+  position: absolute;
+  top: 8px;
+  height: 44%;
+  width: 100%;
+  max-width: ${props => props.maxWidth}%;
+  background-color: rgba(214,48,49,0.7);
+`
+
 class Playground extends Component {
   render() {
     return (
@@ -65,6 +97,13 @@ class Playground extends Component {
           
           <BackgroundColor />
           <BackgroundImage />
+
+          <PlaygroundDiv>
+            <PlaygroundText>
+              <PlaygroundTextRedShadow maxWidth={97} />
+              Under Construction
+            </PlaygroundText>
+          </PlaygroundDiv>
 
 
         </PlaygroundContainer>

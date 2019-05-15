@@ -112,12 +112,16 @@ const AboutSubText = styled.span`
 const AboutTextRed = styled.span`
   position: relative;
 
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.3em;
+  a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+    color: #E3E3E3;
+    text-decoration: none;
+  }
 `
 
 const AboutTextRedShadow = styled.div`
@@ -227,16 +231,22 @@ class About extends Component {
             {/* Info Here */}
             <AboutInfoHolder>
               <AboutText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in leo ac lacus euismod pretium in vitae magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas a lorem lobortis, maximus tortor a, malesuada massa. 
+                Hi, my name is Dexter! I'm a fullstack web developer based in Angeles City, Pampanga, Philppines. I'm a big proponent of the any JavaScript frameworks, preferably work with React and Node.js
               </AboutText>
               <AboutText>
-                Donec sed sapien augue. Fusce at magna nec neque fermentum accumsan quis vel tellus. Duis sed metus in ex ultricies vehicula nec imperdiet dolor. Praesent eu quam lacus. Duis dictum justo a arcu bibendum, quis scelerisque nulla tempus. Fusce eget hendrerit ex.
+                I love to create websites and web applications, paying close attention to all the small details. Also I enjoy doing programming in several coding languages, solving problems, and even doing occasional design work. 
               </AboutText>
+              {/* <AboutText>
+                Sounds good? Great!
+                No matter if you are a startup in need of a landing page, a small business who wants a unique web shop, or an entrepreneur who has an idea for an exciting web application.
+
+                Please feel free to contact me and we'll discuss the rest!
+              </AboutText> */}
 
               <AboutText>
                 <AboutTextRed>
                   <AboutTextRedShadow maxWidth={97} />
-                  DOWNLOAD RESUME
+                  <a href="../DexterNunag-Resume.pdf" download>DOWNLOAD RESUME</a>
                 </AboutTextRed>
               </AboutText>
             </AboutInfoHolder>

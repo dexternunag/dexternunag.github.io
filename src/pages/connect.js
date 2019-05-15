@@ -189,7 +189,7 @@ class Connect extends Component {
             <ConnectTextContainer>
               <ConnectTextHeading>Contact</ConnectTextHeading>
               <ConnectText>Feel free to contact me through the email below.</ConnectText>
-              <Link to="mailto:nunagdexter@gmail.com">nunagdexter@gmail.com</Link>
+              <a href="mailto:nunagdexter@gmail.com">nunagdexter@gmail.com</a>
             </ConnectTextContainer>
 
             <ConnectSocialsContainer>
